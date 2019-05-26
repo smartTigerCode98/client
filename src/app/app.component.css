@@ -1,0 +1,15 @@
+h1{
+  font-family: Verdana, serif;
+  font-size: 18px;
+  color: darkorange;
+}
+
+#head{
+  height: 200px;
+  background-color: black;
+  vertical-align:middle;
+  display:table-cell;
+  width: 100vw;
+  text-align: center;
+}
+

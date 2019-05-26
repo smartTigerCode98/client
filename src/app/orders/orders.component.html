@@ -1,0 +1,30 @@
+
+<app-log-out></app-log-out>
+<button id="readButton" (click)="readOrders()">Read unprocessed orders</button>
+
+<table>
+  <thead>
+  <tr>
+    <th>OrderId</th>
+    <th>When</th>
+    <th>From where</th>
+    <th>Where</th>
+    <th>Marka auto</th>
+    <th>Body type</th>
+    <th>Count of sits</th>
+    <th>Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let order of ordersList">
+    <td>{{order.id}}</td>
+    <td>{{order.when}}</td>
+    <td>{{order.fromWhere}}</td>
+    <td>{{order.where_}}</td>
+    <td>{{order.markAuto}}</td>
+    <td>{{order.bodyType}}</td>
+    <td>{{order.countOfSits}}</td>
+    <td><button (click)="processedOrder(order);">Processed</button></td>
+  </tr>
+  </tbody>
+</table>

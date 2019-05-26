@@ -1,0 +1,20 @@
+
+<div id="wrapper">
+  <div id="title">
+    <h1>Log in to autobase system</h1>
+  </div>
+  <form #myForm="ngForm">
+  <div id="form">
+    <div class="dataField">
+        <input type="email" name="email" placeholder="Email Address" [(ngModel)]="email">
+    </div>
+    <div class="dataField">
+      <input type="password" name="password" placeholder="Password" [(ngModel)]="password">
+    </div>
+    <div class="dataField">
+      <button (click)="login()">Log in</button>
+    </div>
+  </div>
+  </form>
+</div>
+<notifier-container></notifier-container>

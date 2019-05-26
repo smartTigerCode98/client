@@ -1,0 +1,43 @@
+#wrapper{
+  background-color: #333333;
+  height: 585px;
+  width: 98.9%;
+  position: absolute;
+}
+
+#title{
+  margin-top: 50px;
+  position: relative;
+}
+
+h1{
+  text-align: center;
+  font-family: Verdana, serif;
+  font-size: 18px;
+  color: #e8e8e8;
+}
+
+#form{
+  height: 400px;
+  width: 100%;
+  background-color: darkorange;
+  margin: 40px auto;
+  position: relative;
+}
+
+input, button{
+  width: 450px;
+  height: 50px;
+  text-align: center;
+  background-color: black;
+  color: darkorange;
+  /*outline: none;*/
+  border: 0;
+  margin-top: 60px;
+}
+
+.dataField{
+  text-align: center;
+}
+
+

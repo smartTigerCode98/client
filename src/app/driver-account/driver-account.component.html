@@ -1,0 +1,9 @@
+<app-log-out></app-log-out>
+
+<h1>Hello {{driver.name}} {{driver.surname}} !</h1>
+<h2>Your current flight is #{{currentFlight.id}} </h2>
+<button id="completeOrder" (click)="updateStatusFlight()">Flight is complete</button>
+<button id="myCarIsBroke" (click)="myCarIsBroke()">My car is broke</button>
+<button id="myCarIsWork" (click)="myCarIsWork()">My car is work</button>
+
+<notifier-container></notifier-container>

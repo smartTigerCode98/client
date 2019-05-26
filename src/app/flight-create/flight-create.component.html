@@ -1,0 +1,20 @@
+<app-log-out></app-log-out>
+
+<h1>Create flight for order #{{idOrder}}</h1>
+
+<div id="flightForm">
+  <div class="field">
+    <label for="idOrder">ID Order</label>
+    <input name="idOrder" id="idOrder" type="text" value="{{idOrder}}" readonly>
+  </div>
+  <div class="field">
+    <label for="driver">Choose driver</label>
+    <select name="driver" id="driver" (change)="onChange($event.target.value)">
+      <option *ngFor="let driver of listDrivers" value={{driver.id}}>{{driver.name}} {{driver.surname}}</option>
+    </select>
+  </div>
+  <div><button id="confirmOrder" (click)="confirmOrder()">Confirm flight</button></div>
+  <div><button id="back" (click)="back()">Back to orders</button></div>
+</div>
+
+<notifier-container></notifier-container>
