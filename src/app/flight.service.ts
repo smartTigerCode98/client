@@ -7,7 +7,7 @@ import {Flight} from "./models/flight";
 })
 export class FlightService {
 
-  private readonly _url: string = '/api/flight';
+  private readonly _url: string = '/api/flights';
 
   constructor(private http: HttpClient) { }
 
@@ -20,13 +20,13 @@ export class FlightService {
 
   getFlight(idDriver: number): Observable<Flight>{
     const params = new HttpParams().set("idDriver", idDriver.toString());
-    return this.http.get<Flight>(this._url + "/" + idDriver.toString(), {params});
+    return this.http.get<Flight>(this._url + "/drivers/" + idDriver.toString(), {params});
   }
 
   updateStatusFlight(idFlight: number, status: boolean, idDriver: number):Observable<boolean>{
     const params = new HttpParams().set('idFlight', idFlight.toString())
       .set('statusFlight', status ? "true":"false")
       .set('idDriver', idDriver.toString());
-    return this.http.put<boolean>(this._url + "/" + idFlight.toString(),null,{params});
+    return this.http.put<boolean>(this._url + "/" + idFlight.toString(), null, {params});
   }
 }

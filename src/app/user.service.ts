@@ -9,7 +9,7 @@ import { HttpClient, HttpParams} from '@angular/common/http';
 })
 export class UserService {
 
-  private readonly _url: string = '/api/verifyUser';
+  private readonly _url: string = '/api/users';
 
   private static readonly StorageKeyFirst: string = "id";
 
